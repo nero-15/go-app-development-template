@@ -19,4 +19,10 @@ go mod init　{myapp}
 ```
 go get github.com/labstack/echo/v4
 ```
-[echo](https://echo.labstack.com/guide/){:target="_blank"}
+[echo](https://echo.labstack.com/guide/)
+[gopkg.in/ini.v1](https://pkg.go.dev/gopkg.in/ini.v1)
+
+3. config.iniファイルを作成
+```
+mv config.ini.default config.ini
+```
