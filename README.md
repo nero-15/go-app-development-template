@@ -11,10 +11,12 @@ go言語でアプリケーション開発する際のテンプレート
 
 1. 初期設定
 ```
-mkdir {パッケージ名}
-go mod init　{パッケージ名}
+mkdir {myapp}
+go mod init　{myapp}
 ```
 
 2. 該当パッケージインストール
 ```
+go get github.com/labstack/echo/v4
 ```
+[echo](https://echo.labstack.com/guide/){:target="_blank"}
