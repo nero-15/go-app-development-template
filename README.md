@@ -17,4 +17,6 @@ go mod init　{パッケージ名}
 
 2. 該当パッケージインストール
 ```
+go get github.com/labstack/echo/v4
 ```
+echo 
