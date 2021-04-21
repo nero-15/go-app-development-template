@@ -11,8 +11,8 @@ go言語でアプリケーション開発する際のテンプレート
 
 1. 初期設定
 ```
-mkdir {パッケージ名}
-go mod init　{パッケージ名}
+mkdir {myapp}
+go mod init　{myapp}
 ```
 
 2. 該当パッケージインストール
