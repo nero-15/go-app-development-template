@@ -1,16 +1,17 @@
-package controllers
+package server
 
 import (
+	"struttura/app/controllers"
 	"struttura/config"
 
 	echo "github.com/labstack/echo/v4"
 )
 
-// StartWebServer is
-func StartWebServer() {
+// Start is
+func Start() {
 	e := echo.New()
 
-	e.GET("/", index)
+	e.GET("/", controllers.Index)
 
 	e.Logger.Fatal(e.Start(config.Config.Port))
 }
