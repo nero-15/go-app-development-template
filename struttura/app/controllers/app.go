@@ -7,5 +7,8 @@ import (
 )
 
 func index(c echo.Context) error {
-	return c.Render(http.StatusOK, "index.html", "aaa")
+	return c.Render(http.StatusOK, "index.html", map[string]interface{}{
+		"name": "struttura",
+		"age":  10,
+	})
 }

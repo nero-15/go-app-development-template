@@ -5,9 +5,7 @@
 	<title>struttura</title>
 </head>
 <body>
-	<h1>struttura</h1>
-	<p>
-		{{define "hello"}}Hello, {{.}}!{{end}}
-	</p>
+	<h1>Hello {{index . "name"}}</h1>
+	<p>{{index . "age"}}</p>
 </body>
 </html>
