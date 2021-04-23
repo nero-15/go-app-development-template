@@ -1,9 +1,9 @@
 package main
 
 import (
-	"struttura/server"
+	"struttura/app/controllers"
 )
 
 func main() {
-	server.Start()
+	controllers.StartWebServer()
 }
