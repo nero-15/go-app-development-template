@@ -8,16 +8,6 @@ import (
 	echo "github.com/labstack/echo/v4"
 )
 
-// Template ...
-type Template struct {
-	templates *template.Template
-}
-
-// Render ...
-func (t *Template) Render(w io.Writer, name string, data interface{}, c echo.Context) error {
-	return t.templates.ExecuteTemplate(w, name, data)
-}
-
 // TemplateRenderer is a custom html/template renderer for Echo framework
 type TemplateRenderer struct {
 	templates *template.Template
