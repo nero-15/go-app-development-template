@@ -39,6 +39,7 @@ func StartWebServer() {
 			`"method":"${method}","uri":"${uri}","status":${status},"error":"${error}"` + "\n",
 	}))
 	e.Use(middleware.Recover())
+	e.Use(middleware.Static("/public"))
 
 	e.GET("/", index)
 
