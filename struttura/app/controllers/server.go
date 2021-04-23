@@ -40,6 +40,7 @@ func StartWebServer() {
 	}))
 	e.Use(middleware.Recover())
 	e.Use(middleware.Static("/public"))
+	e.Pre(middleware.RemoveTrailingSlash())
 
 	e.GET("/", index)
 
