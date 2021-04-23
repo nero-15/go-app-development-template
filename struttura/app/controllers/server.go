@@ -6,6 +6,7 @@ import (
 	"struttura/config"
 
 	echo "github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 )
 
 // TemplateRenderer is a custom html/template renderer for Echo framework
@@ -32,6 +33,11 @@ func StartWebServer() {
 		templates: template.Must(template.ParseGlob("app/views/*.html")),
 	}
 	e.Renderer = renderer
+
+	e.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
+		Format: `"time":"${time_rfc3339}","remote_ip":"${remote_ip}","host":"${host}",` +
+			`"method":"${method}","uri":"${uri}","status":${status},"error":"${error}"` + "\n",
+	}))
 
 	e.GET("/", index)
 
