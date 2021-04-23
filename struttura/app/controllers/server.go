@@ -38,6 +38,7 @@ func StartWebServer() {
 		Format: `"time":"${time_rfc3339}","remote_ip":"${remote_ip}","host":"${host}",` +
 			`"method":"${method}","uri":"${uri}","status":${status},"error":"${error}"` + "\n",
 	}))
+	e.Use(middleware.Recover())
 
 	e.GET("/", index)
 
