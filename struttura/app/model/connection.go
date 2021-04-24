@@ -12,6 +12,7 @@ var DbConnection *sql.DB
 
 func init() {
 	var err error
+	// TODO: config.Config.DbNameを分ける
 	DbConnection, err = sql.Open(config.Config.SQLDriver, config.Config.DbName)
 	if err != nil {
 		log.Fatalln(err)
