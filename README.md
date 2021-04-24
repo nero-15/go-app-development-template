@@ -18,6 +18,8 @@ go mod init　{myapp}
 2. 該当パッケージインストール
 ```
 go get github.com/labstack/echo/v4
+go get gopkg.in/ini.v1
+go get github.com/go-sql-driver/mysql
 ```
 [echo](https://echo.labstack.com/guide/)
 [gopkg.in/ini.v1](https://pkg.go.dev/gopkg.in/ini.v1)
