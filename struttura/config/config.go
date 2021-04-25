@@ -9,9 +9,11 @@ import (
 
 // ConfigList is api key struct
 type ConfigList struct {
-	DbName    string
-	SQLDriver string
-	Port      string
+	DbHost     string
+	DbName     string
+	DbPassword string
+	SQLDriver  string
+	Port       string
 }
 
 // Config is ConfigList
@@ -25,8 +27,10 @@ func init() {
 	}
 
 	Config = ConfigList{
-		DbName:    cfg.Section("db").Key("name").String(),
-		SQLDriver: cfg.Section("db").Key("driver").String(),
-		Port:      cfg.Section("web").Key("port").String(),
+		DbHost:     cfg.Section("db").Key("host").String(),
+		DbName:     cfg.Section("db").Key("name").String(),
+		DbPassword: cfg.Section("db").Key("password").String(),
+		SQLDriver:  cfg.Section("db").Key("driver").String(),
+		Port:       cfg.Section("web").Key("port").String(),
 	}
 }
