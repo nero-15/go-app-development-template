@@ -2,6 +2,7 @@ package models
 
 import (
 	"database/sql"
+	"fmt"
 	"log"
 	"struttura/config"
 
@@ -12,8 +13,8 @@ var DbConnection *sql.DB
 
 func init() {
 	var err error
-	// TODO: config.Config.DbNameを分ける
-	DbConnection, err = sql.Open(config.Config.SQLDriver, config.Config.DbName)
+	db, _ := fmt.Printf("%v:%v@/%v", config.Config.DbHost, config.Config.DbPassword, config.Config.DbName)
+	DbConnection, err = sql.Open(config.Config.SQLDriver, string(db))
 	if err != nil {
 		log.Fatalln(err)
 	}

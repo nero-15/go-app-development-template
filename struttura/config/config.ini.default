@@ -1,6 +1,8 @@
 [db]
-name = XXXXXXXXXX
 driver = XXXXXXXXXX
+host = XXXXXXXXXX
+name = XXXXXXXXXX
+password = XXXXXXXXXX
 
 [web]
 port = 8080
