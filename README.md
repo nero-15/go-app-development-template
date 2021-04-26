@@ -21,8 +21,9 @@ go get github.com/labstack/echo/v4
 go get gopkg.in/ini.v1
 go get github.com/go-sql-driver/mysql
 ```
-[echo](https://echo.labstack.com/guide/)
-[gopkg.in/ini.v1](https://pkg.go.dev/gopkg.in/ini.v1)
+[echo](https://echo.labstack.com/guide/) <br>
+[gopkg.in/ini.v1](https://pkg.go.dev/gopkg.in/ini.v1) <br>
+[go-sql-driver](github.com/go-sql-driver/mysql)
 
 3. config.iniファイルを作成
 ```
