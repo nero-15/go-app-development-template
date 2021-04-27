@@ -30,8 +30,8 @@ mv config.ini.default config.ini
 ```
 DBを使う場合はconfig.iniの該当の情報を追加
 
-host = DBのホスト名
-name = DB名
+host = DBのホスト名 <br>
+name = DB名 <br>
 password = パスワード
 
 4. 開発を始めよう！
