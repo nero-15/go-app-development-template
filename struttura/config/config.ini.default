@@ -1,5 +1,5 @@
 [db]
-driver = XXXXXXXXXX
+driver = mysql
 host = XXXXXXXXXX
 name = XXXXXXXXXX
 password = XXXXXXXXXX
