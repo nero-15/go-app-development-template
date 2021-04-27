@@ -6,14 +6,12 @@ go言語でアプリケーション開発する際のテンプレート
 
 ## 環境
 - go1.14.3
+- mysql 8.0
 
 ## やり方
 
-1. 初期設定
-```
-mkdir {myapp}
-go mod init　{myapp}
-```
+1. ファイルの追加
+このリポジトリのファイルをプロジェクトにzipファイル等でコピー
 
 2. 該当パッケージインストール
 ```
@@ -29,3 +27,11 @@ go get github.com/go-sql-driver/mysql
 ```
 mv config.ini.default config.ini
 ```
+DBを使う場合はconfig.iniの該当の情報を追加
+
+host = DBのホスト名
+name = DB名
+password = パスワード
+
+4. 開発を始めよう！
+
