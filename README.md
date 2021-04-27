@@ -25,6 +25,7 @@ go get github.com/go-sql-driver/mysql
 
 3. config.iniファイルを作成
 ```
+cd struttura/config
 mv config.ini.default config.ini
 ```
 DBを使う場合はconfig.iniの該当の情報を追加
